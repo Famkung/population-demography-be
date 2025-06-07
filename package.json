@@ -1,0 +1,26 @@
+{
+  "name": "population-demography-be",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Famkung/population-demography-be#readme",
+  "bugs": {
+    "url": "https://github.com/Famkung/population-demography-be/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Famkung/population-demography-be.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
