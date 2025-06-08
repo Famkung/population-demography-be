@@ -3,7 +3,7 @@ export const getDataController = async (req , res) => {
     try {
         const cache = getCsvCache()
         const year = req.params.year
-        const data = cache.filter(item => item.Year === year)
+        const data = cache.filter(item => item.year === year)
         res.status(200).json({
             status: 'success',
             data

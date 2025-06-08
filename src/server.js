@@ -1,10 +1,12 @@
 import express from 'express'
-import routes from './routes/index.js' 
+import routes from './routes/index.js'
+import cors from 'cors'
 import { loadCsvToCache } from './service/cache.service.js'
 
 const app = express()
 const PORT = process.env.PORT || 8080
 
+app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use('/api', routes)
 
